@@ -1,0 +1,77 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Product #1",
+      "images": [],
+      "description": "Some product.",
+      "price": 50
+    },
+    {
+      "id": 2,
+      "name": "Product #2",
+      "images": [],
+      "description": "Another product",
+      "price": 100
+    },
+    {
+      "id": 3,
+      "name": "Product #3",
+      "images": [],
+      "description": "Last product",
+      "price": 25
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "stan",
+      "email": "stan@me.com",
+      "password": "password"
+    },
+    {
+      "id": 2,
+      "username": "mac",
+      "email": "mac@me.com",
+      "password": "password"
+    },
+    {
+      "id": 3,
+      "username": "lee",
+      "email": "lee@me.com",
+      "password": "password"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "title": "Great Product",
+      "content": "I love this thing!!!",
+      "author": 3,
+      "productId": 2,
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "title": "It works",
+      "content": "It does the job, but materials are cheap.",
+      "author": 3,
+      "productId": 1,
+      "rating": 3
+    }
+  ],
+  "carts": [
+    {
+      "id": 1,
+      "total": 100,
+      "items": [2],
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "total": 150,
+      "items": [2,1],
+      "userId": 2
+    }
+  ]
+}

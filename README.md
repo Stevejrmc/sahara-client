@@ -1,2 +1,2 @@
-# sahara-client
+# Sahara-client
 Client - React, Webpack & Babel

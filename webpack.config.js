@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   devtool: 'inline-source-map',
   entry: './src/index.js',
@@ -12,9 +14,12 @@ module.exports = {
   module: {
     rules: [
     {
-      test: /\.(js|jsx)$/,
+      test: /\.jsx?$/,
       exclude: /node_modules/,
-      use: ['babel-loader', 'eslint-loader']
+      loader: 'babel-loader',
+      query: {
+        presets: ['@babel/preset-env', '@babel/react'],
+      },
     },
     {
       test: /\.less$/,
@@ -26,4 +31,9 @@ module.exports = {
     }
     ]
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './dist/index.html',
+    }),
+  ],
 };

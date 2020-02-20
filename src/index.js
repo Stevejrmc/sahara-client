@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-/* eslint-disable */
-import App from './components/App.jsx';
+import App from './components/App';
 
 const root = document.querySelector('#root');
 ReactDOM.render(<App />, root);

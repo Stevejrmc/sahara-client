@@ -36,7 +36,7 @@ class App extends Component {
     return (
       <div className="main-container">
         <h2>Sahara</h2>
-        { products.map((p) => <h3 key={p.name}>{p.name}</h3>)}
+        { products.length ? products.map((p) => <h3 key={p.name}>{p.name}</h3>) : '...loading'}
       </div>
     );
   }

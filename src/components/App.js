@@ -19,11 +19,9 @@ class App extends Component {
 
   getProducts(path) {
     axios.get(API_URL + path)
-      .then((response) => {
-        this.setState({
-          products: response.data,
-        });
-      })
+      .then((response) => this.setState({
+        products: response.data,
+      }))
       .catch((err) => {
         throw err;
       });

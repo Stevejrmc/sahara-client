@@ -12,7 +12,7 @@ class App extends Component {
     };
     this.getProducts = this.getProducts.bind(this);
   }
-
+// TODO: memory leak 
   componentDidMount() {
     this.getProducts('products');
   }
